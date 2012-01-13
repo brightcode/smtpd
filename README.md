@@ -1,40 +1,40 @@
-SMTPD
-====================
+# SMTPD
 
-Implementation of a basic SMTP server in various languages and platforms.
+Implementation of a basic SMTP daemon in various languages and platforms.
 
-Ruby / EventMachine
------------
+I created this project as an exercise in polyglot programming and to test the performance of various frameworks. A lot of inspiration for this project came from [HelloD](https://github.com/carbonfive/hellod).
 
-  cd ruby-em
-  bundle
-  ruby smtpd.rb
+All implementations have roughly the same functionality, which is at the "hello world" level. They listen on all interfaces for connections on port 2525 and blackhole incoming emails. For a more complete implementation of an SMTP server, you need to look for other open source projects.
 
-Ruby / Cool.io
------------
+## Running
 
-  cd ruby-coolio
-  bundle
-  ruby smtpd.rb
+### Go
 
-Node.JS
------------
+    cd go
+    gomake
+    ./smtpd
 
-  cd node
-  node smtpd.js
-  
-Java / Netty
------------
+### Node
 
-  cd java-netty
-  ./compile
-  ./smtpd
+    cd node
+    node smtpd.js
 
-Performance testing
------------
+### Ruby - Cool.io
+
+    cd ruby-coolio
+    bundle
+    ruby smtpd.rb
+
+### Ruby - EventMachine
+
+    cd ruby-em
+    bundle
+    ruby smtpd.rb
+
+## Performance testing
 
 Performance testing with smtpsource. This program is distributed with Postfix.
 
-time smtp-source -c -d -l 32000 -m 10000 -N -s 30 127.0.0.1:2525
+    time smtp-source -c -d -l 32000 -m 10000 -N -s 30 127.0.0.1:2525
 
 See results.md for test results from my MacBook Pro with 2.2 GHz Intel Core i7.
