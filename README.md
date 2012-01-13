@@ -1,4 +1,4 @@
-# SMTPD
+# SmtpD
 
 Implementation of a basic SMTP daemon in various languages and platforms.
 
@@ -14,6 +14,12 @@ All implementations have roughly the same functionality, which is at the "hello 
     gomake
     ./smtpd
 
+### Java - Netty
+
+    cd java-netty
+    ./compile
+    ./smtpd
+    
 ### Node
 
     cd node

@@ -7,6 +7,15 @@
     user	0m0.198s
     sys	0m0.914s
 
+### Java - Netty
+
+    $ time smtp-source -c -d -l 32000 -m 10000 -N -s 30 127.0.0.1:2525
+    10000
+
+    real	0m1.998s
+    user	0m0.252s
+    sys	0m0.742s
+
 ### Node
 
     $ time smtp-source -c -d -l 32000 -m 10000 -N -s 30 127.0.0.1:2525
