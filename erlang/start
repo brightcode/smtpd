@@ -1,0 +1,9 @@
+#!/bin/sh
+echo ""
+echo "At the prompt, to start enter:"
+echo "1> application:start(smtpd)."
+echo "and to stop:"
+echo "2> q()."
+echo ""
+erl -pa ebin
+

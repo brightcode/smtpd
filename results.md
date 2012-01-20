@@ -1,3 +1,12 @@
+### Erlang
+
+    $ time smtp-source -c -d -l 32000 -m 10000 -N -s 30 127.0.0.1:2525
+    10000
+
+    real	0m2.693s
+    user	0m0.291s
+    sys	0m1.239s
+
 ### Go
 
     $ time smtp-source -c -d -l 32000 -m 10000 -N -s 30 127.0.0.1:2525

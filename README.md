@@ -8,6 +8,13 @@ All implementations have roughly the same functionality, which is at the "hello 
 
 ## Running
 
+### Erlang
+
+    cd erlang
+    ./compile
+    ./start
+    1> application:start(smtpd).
+    
 ### Go
 
     cd go
