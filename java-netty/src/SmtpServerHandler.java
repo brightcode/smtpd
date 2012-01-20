@@ -76,7 +76,7 @@ public class SmtpServerHandler extends SimpleChannelUpstreamHandler
             channel.write("250 " + hostname + "\r\n");
         }
         else if (command.equals("EHLO")) {
-            channel.write("250 " + hostname + "\r\n");			
+            channel.write("250 " + hostname + "\r\n");
         }
         else if (command.equals("MAIL")) {
             message.setLength(0);  // new transaction

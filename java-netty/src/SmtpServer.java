@@ -33,7 +33,5 @@ public class SmtpServer
 
         // Bind and start to accept incoming connections.
         bootstrap.bind(new InetSocketAddress(port));
-        // TODO: add optional bind IP
-        // returns serverChannel
     }
 }

@@ -19,6 +19,11 @@ All implementations have roughly the same functionality, which is at the "hello 
     cd java-netty
     ./compile
     ./smtpd
+
+### JRuby - Netty
+
+    cd jruby-netty
+    jruby smtp_server.rb
     
 ### Node
 
