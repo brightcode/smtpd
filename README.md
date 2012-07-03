@@ -53,7 +53,7 @@ All implementations have roughly the same functionality, which is at the "hello 
 
     cd ruby-celluloid
     bundle
-    ruby smtpd.rb
+    jruby --1.9 smtpd.rb
 
 ## Performance testing
 
