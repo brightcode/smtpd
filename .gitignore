@@ -2,4 +2,5 @@
 Gemfile.lock
 *.6
 *.beam
+*.class
 *.jar
