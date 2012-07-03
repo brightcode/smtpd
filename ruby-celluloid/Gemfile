@@ -1,0 +1,5 @@
+source :rubygems
+
+gem 'nio4r'
+gem 'celluloid'
+gem 'celluloid-io'

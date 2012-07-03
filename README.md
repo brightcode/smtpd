@@ -49,6 +49,12 @@ All implementations have roughly the same functionality, which is at the "hello 
     bundle
     ruby smtpd.rb
 
+### Ruby - Celluloid
+
+    cd ruby-celluloid
+    bundle
+    ruby smtpd.rb
+
 ## Performance testing
 
 Performance testing with smtpsource. This program is distributed with Postfix.

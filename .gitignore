@@ -1,0 +1,5 @@
+.DS_Store
+Gemfile.lock
+*.6
+*.beam
+*.jar
