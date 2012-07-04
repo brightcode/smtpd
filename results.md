@@ -50,8 +50,15 @@ Note that "user" and "sys" times relate to the smtp-source process, and not the 
     user	0m0.175s
     sys	0m0.587s
 
-### JRuby - Celluloid
+### JRuby - Celluloid:IO
 
-    real	0m7.354s
+    real	0m7.197s
     user	0m0.231s
-    sys	0m1.371s
+    sys	0m1.377s
+
+### JRuby - Celluloid actors
+
+    real	0m3.370s
+    user	0m0.312s
+    sys	0m1.595s
+    

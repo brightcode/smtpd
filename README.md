@@ -49,9 +49,15 @@ All implementations have roughly the same functionality, which is at the "hello 
     bundle
     ruby smtpd.rb
 
-### Ruby - Celluloid
+### Ruby - Celluloid evented
 
-    cd ruby-celluloid
+    cd ruby-cell-ev
+    bundle
+    jruby --1.9 smtpd.rb
+
+### Ruby - Celluloid threaded
+
+    cd ruby-cell-th
     bundle
     jruby --1.9 smtpd.rb
 

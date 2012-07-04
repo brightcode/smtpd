@@ -1,5 +1,5 @@
 #
-# SMTP deamon in Ruby using Celluloid
+# SMTP deamon in Ruby using Celluloid::IO
 #
 # Run with:
 #    jruby --1.9 smtpd.rb
@@ -240,7 +240,7 @@ class SmtpServer
   include Celluloid::IO
   
   def initialize(host, port)
-    @server = TCPServer.new(host, port)
+    @server = Celluloid::IO::TCPServer.new(host, port)
     run!
   end
   
@@ -258,7 +258,7 @@ class SmtpServer
   def handle_connection(socket)
     connection = SmtpServerConnection.new(socket)
     connection.run
-  rescue EOFError
+  rescue EOFError  # Errno::ECONNRESET, EOFError, IOError, Errno::EBADF, Errno::EPIPE
     # peer disconnected
     socket.close
   end
